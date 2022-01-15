@@ -64,11 +64,15 @@ public $psr4 = [
 
 2. For easier access the the helper functions, add the helper names 'lic' and 'bs5' to your **app/Controller/BaseCopntroller.php**. It might look like this (do not reomve existing helper entries):
 ```php
-    protected $helpers = ['bs5', 'lic', 'session'];
-];
+protected $helpers = ['bs5', 'lic', 'session'];
 ```
 
-3. Change the details for your license server and secret key in **lewe/ci4-lic/src/Config/Lic.php**.
+3. Change the details for your license server and secret key in **lewe/ci4-lic/src/Config/Lic.php**. Example:
+```php
+public $licenseServer = 'https://www.mylicenseserver.com';
+...
+public $secretKey = '5e07r7d791df36.99585318';
+```
 
 ### Routes
 
