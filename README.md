@@ -105,7 +105,7 @@ If you like to use your own view you can override them editing the `$views` arra
 ```php
 public $views = [
 
-        'license'   => 'CI4\Lic\Views\license',
+    'license'   => 'CI4\Lic\Views\license',
 
 ];
 ```
